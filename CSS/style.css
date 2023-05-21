@@ -1,0 +1,537 @@
+/* Global styles*/
+*{
+ /* padding: 0;
+ margin: 0; */
+ box-sizing: border-box;
+ list-style: none;
+ text-decoration: none;
+}
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding-top: 130px;
+    margin: 0;
+    background: aliceblue;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+article#main-col {
+    float: left;
+    width: 65%;
+    padding-top: 10px;
+}
+
+div#main-col1 {
+    float: left;
+    width: 45%;
+    margin-right: 2px;
+    padding-top: 10px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+} 
+
+.button_1{
+    line-height: 30px;
+    background: #b3932df5;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: aliceblue;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all .50s ease;
+}
+
+/* styling the header */
+header{
+    background: #1c226f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;    
+    color: aliceblue;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     padding: 10px 6%;
+    /* min-height: 70px; */
+    border-bottom: #b3932df5 5px solid;
+    transition: all .50s ease;
+}
+
+header .navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 0px;
+   margin: 0px 2px;
+    transition: all .50s ease;
+}
+
+header .navbar li{
+    float: left;
+    padding: 0px 20px 0px 20px;
+    display: inline;
+    padding-left: 5px;
+}
+
+header #branding{
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+header #branding img{
+    width: 10%;
+    margin-right: 3px;
+    margin-bottom: 6px;
+}
+
+header  h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+header .navbar{
+    /* float: right; */
+    display: flex;
+    /* margin-top: 10px; */
+}
+
+header .highlight{
+    color: #b3932df5;
+    font-weight: bold;
+}
+
+header .current a{
+    color: #b3932df5;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #b3932df5;
+    font-weight: bold;
+}
+
+#menu-icon{
+ font-size: 35px;
+ color: aliceblue;
+ cursor: pointer;
+ z-index: 10001;
+ display: none;
+ float: right;
+}
+/* styling the form */
+
+.input-control input,
+.input-control textarea { border: 2px solid #f0f0f0; border-radius: 4px;  padding: 10px; width: 80%; } 
+
+.input-control input:focus { outline: 0; } 
+.input-control textarea:focus { outline: 0; } 
+
+.input-control.success input { border-color: #09c372; } 
+
+.input-control.success textarea { border-color: #09c372; } 
+
+.input-control.error input { border-color: #ff3860; } 
+
+.input-control.error textarea { border-color: #ff3860; } 
+
+.input-control .error { color: #ff3860; font-size: 9px; height: 13px; }
+
+/* styling the showcase */
+#showcase{
+    width: 100%;
+    min-height: 400px;
+    background: url(../img/showcase.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 10px;
+    margin-top: -28px;
+    
+}
+
+/* #showcase h1{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+#showcase p{
+    font-size: 20px;
+} */
+
+/* styling the meeting section in about.html file.  */
+
+#meetings{
+    padding: 2px;
+    background: #1f267c;
+    color: aliceblue;
+    margin-top: 10px;
+}
+
+.align ul{
+ display: flex;
+ justify-content: center;
+ 
+}
+
+.align li{
+ padding: 50px;
+ list-style: none;
+ text-align: center;
+}
+
+.align h3{
+ display: flex;
+ justify-content: center;
+ margin-bottom: 0px;
+}
+
+.list p{
+ background: #b3932df5;
+ padding: 2px;
+}
+
+/* styling the dark class */
+.dark{
+    padding: 15px;
+    background: #1f267c;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dark1{
+    padding: 10px;
+    background: #1f267c;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+/* styling the contact section */
+#contactUs{
+    background: #b3932df5;
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+}
+
+/* styling the box section */
+#boxes{
+margin-top: 20px;
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#align-boxes h2{
+    text-align: center;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Add transition properties */
+  }
+
+#boxes .box img{
+    width: 90px;
+    border-radius: 80px;
+}
+
+
+/* adding animation key frames */
+@keyframes fadeAndSlideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+    display: none;
+  }
+}
+
+@keyframes fadeAndSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+    display: block;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* styling the footer section */
+footer{
+    background: #1c226f;
+    color: aliceblue;
+    padding: 1px;
+    text-align: center;
+}
+
+/* styling the aside section */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, 
+aside#sidebar .quote textarea {
+    padding: 5px;
+    width: 90%;
+}
+
+aside#sidebar1 .quote input, 
+aside#sidebar1 .quote textarea {
+    padding: 10px;
+    width: 80%;
+}
+aside#sidebar1 {
+    float: right;
+    width: 50%;
+    margin-top: 10px;
+}
+
+div#images h1{
+ font-size: 20px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+/* styling the blog section */
+ul#blog li{
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: #bebecf solid 1px;
+    background: #ffffff;
+}
+
+ul#list2 li{
+ list-style: square;
+    padding: 20px;
+    background: none;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+}
+
+/* styling the audio section */
+#audio { 
+   background-color: #f0f0f0; 
+   padding: 10px; 
+   margin-bottom: 10px; 
+   margin-top: 10px; 
+   border-radius: 10px;
+   transition: background-color 0.5s, transform 0.5s, border-color 0.5s; 
+   }
+
+#audio:hover { 
+   background-color: #b3932df5; 
+   cursor: pointer; 
+   transform: translate(2px, -2px); 
+}
+
+#audio h2 {
+  margin: 0;
+  font-size: 15px;
+}
+
+#audio:hover h2{
+ color: aliceblue;
+}
+#audio audio { 
+margin-top: 5px; 
+}
+
+/* styling the swipers */
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+ color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active{
+ background: #fff;
+}
+
+
+/* adding media query */
+
+@media (max-width: 768px) {
+#menu-icon{
+ display: block;
+}
+
+.navbar{
+ position: absolute;
+ top: 100%;
+ right: -100%;
+ width: 270px;
+ height: 12em;
+ background: #b3932df5;
+ display: flex;
+ flex-direction: column;
+ border-radius: 10px;
+ justify-content: flex-start;
+ transition: all .50s ease;
+}
+.navbar a{
+ display: block;
+ margin: 12px 0;
+ padding: 0px 25px;
+ transition: all .50s ease;
+}
+.navbar a:hover{
+color: #1c226f;
+transform: translateY(5px);
+}
+
+.navbar.open {
+ right: 2%;
+}
+
+.navbar .current a{
+color: #1c226f;
+}
+}
+@media screen and (max-width: 768px) {
+
+div#main-col1 {
+    float: none;
+    width: 100%;
+    margin-right: 0px;
+}
+
+#audio audio { 
+width: 100%;
+}
+
+aside#sidebar1 {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+}
+  
+#showcase{
+    width: 100%;
+    min-height: 140px;
+}
+
+/* #showcase h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+#showcase p{
+    font-size: 15px;
+}
+ */
+#newsletter{
+    background: #1c226f;
+    color: aliceblue;
+    padding: 4px; 
+    padding-bottom: 10px;
+}
+
+#newsletter h1{
+    float: none;
+    
+}
+
+#newsletter form{
+    float: none;
+    /* margin-top: 15px; */
+}
+
+#newsletter input{
+    padding: 3px;
+    height: 25px;
+    width: 180px;
+    border: none;
+    border-radius: 20px;
+}
+.button_1{
+    line-height: 30px;
+    background: #b3932df5;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: aliceblue;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+}
+#boxes{
+    margin-top: 5px;
+    }
+#boxes .box{
+   float: none;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+#boxes .box img{
+    width: 90px;
+}
+
+aside#sidebar {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, 
+aside#sidebar .quote textarea {
+    padding: 5px;
+    width: 90%;
+}
+
+article#main-col {
+    float: none;
+    width: 100%;
+}
+
+.align ul{
+ display: inline;
+ justify-content: center;
+ padding: 2px;
+}
+
+.align li{
+ padding: 2px;
+ 
+}
+  /* body {
+    font-size: 30px;
+  } */
+}
