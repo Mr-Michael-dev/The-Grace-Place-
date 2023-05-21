@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Media</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script defer src="./JS/app2.js"></script>
+<script defer src="./JS/formValidation2.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+ 
+ <!-- This is the header section. it contains nav bar -->
+   <header>
+                <h1 id="branding"> <img src="./img/logo2.png" alt="Logo"> The <span class="highlight">Grace Place</span></h1>
+              
+            <nav>
+                <ul id="nav-links" class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                   <li class="current"><a href="media.html">Media</a></li>
+                    <li><a href="#contactUs">Contact</a></li>
+                </ul>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </nav>
+    </header>
+    
+    <section>
+     <div class="container">
+      <div id="main-col1">
+       <h1>Free Download</h1>
+       <p>Download and listen to our sermons below. Ask Questions using the 'Ask question section'.</p>
+       <div id="audio">
+        <h2>The basis of our faith_part 1 by Pastor VEE</h2>
+  <audio id="myAudio" controls>
+    <source src="./audio/The basis of our faith1.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+       </div>
+       
+        <div id="audio">
+        <h2>The basis of our faith_part 2 by Pastor VEE</h2>
+  <audio id="myAudio" controls>
+    <source src="./audio/The basis of our faith2.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+       </div>
+       
+       <div id="audio">
+        <h2>Gods provision via the cross By Michael Oyedepo</h2>
+  <audio id="myAudio" controls>
+    <source src="./audio/Gods provision via the cross By Michael Oyedepo.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+       </div>
+       
+        <div id="audio">
+        <h2>From the cross to the throne_part 1 by Pastor VEE</h2>
+  <audio id="myAudio" controls>
+    <source src="./audio/from the cross to the throne1.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+       </div>
+       
+        <div id="audio">
+        <h2>From the cross to the throne_Part 2 by Pastor VEE</h2>
+  <audio id="myAudio" controls>
+    <source src="./audio/from the cross to the throne2.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+       </div>
+       </div>
+       
+       
+       <!-- photo gallery section -->
+    <aside id="sidebar1">
+      <div id="images">
+       <h1>Photo Gallery</h1>
+       
+       <!-- Slider main container --> 
+       <div class="swiper"> 
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper"> 
+         <!-- Slides --> 
+         <div class="swiper-slide">
+          <img src="./img/gal1.jpg" alt="Pst VEE" width="100%">
+          </div> 
+          <div class="swiper-slide">
+          <img src="./img/gal2.jpg" alt="Pst VEE" width="100%">
+          </div> 
+          <div class="swiper-slide">
+          <img src="./img/gal3.jpg" alt="Pst VEE" width="100%">
+          </div> 
+          <div class="swiper-slide">
+          <img src="./img/gal4.jpg" alt="Pst VEE" width="100%">
+          </div> 
+          <div class="swiper-slide">
+          <img src="./img/gal5.jpg" alt="Pst VEE" width="100%">
+          </div> 
+          <div class="swiper-slide">
+          <img src="./img/gal6.jpg" alt="Pst VEE" width="100%">
+          </div> 
+         </div> 
+         <!-- If we need pagination --> 
+         <div class="swiper-pagination"></div> 
+      <!-- If we need navigation buttons --> 
+      <div class="swiper-button-prev"></div> 
+      <div class="swiper-button-next"></div> 
+      </div>
+       </div>
+       </aside>
+       
+       <aside id="sidebar">
+                <div class="dark">
+                    <h3>Ask Your Questions below</h3>
+                    <form id="form" class="quote">
+        <div class="input-control">
+            <label for="name">Name</label><br>
+              <input name="name" id="name" type="text" placeholder="Enter your Name">
+              <div class="error"></div>
+                   </div>
+                  
+                   <div class="input-control">
+            <label for="email">Name</label><br>
+              <input name="email" id="email" type="text" placeholder="Enter your email">
+              <div class="error"></div>
+                   </div>
+         
+          <div class="input-control">
+       <label for="question">Question</label><br>
+       <textarea id="question" placeholder="Ask your question"></textarea>
+       <div class="error"></div>
+                   </div>
+                   
+                   <div>
+                       <button class="button_1" type="submit">Submit</button>
+                   </div>
+                    </form>
+                </div>
+            </aside>
+  
+     </div>
+    </section>
+    
+<section id="contactUs">
+      <div class="container">
+        <h1>
+          Contact Us
+        </h1>
+        <p>#64 Agbonchia/Oyigbo road, opposite Lutheran Church, Agbonchia, Eleme, Rivers State, Nigeria</p>
+        
+        <ul>
+          <li>Call: +234 705 813 1117</li>
+          <li>Facebook: @TheGracePlace</li>
+        </ul>
+      </div>
+    </section>
+    
+    <footer>
+        <p>The Grace Place. Copyright &copy; 2023.</p>
+    </footer>
+</body>
+</html>
