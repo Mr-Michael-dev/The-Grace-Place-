@@ -11,7 +11,7 @@ form.addEventListener('submit', e => { e.preventDefault();
 if (validateInputs()) {
     alert("Submitted successfully! We will get back to you");
 
-this.reset();}
+form.reset();}
 });
 
 const setError = (element, message) => { const inputControl = element.parentElement; 
@@ -83,9 +83,9 @@ inputControl.classList.add('success');
 inputControl.classList.remove('error'); }; 
 const isValidEmail2 = email => { const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; return re.test(String(email).toLowerCase()); }
 
-const validateEmail = () => {
+const validateEmail2 = () => {
 
-const email2Value = email.value.trim(); 
+const email2Value = email2.value.trim(); 
 
  if(email2Value === '') { 
 setError(email2, 'Email is required'); } 
