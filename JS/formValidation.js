@@ -10,11 +10,6 @@ const question = document.getElementById('question');
 form.addEventListener('submit', e => {
 e.preventDefault(); 
 validateInputs();
-
-
-if (validateIputs()){
-   alert('Submitted successfully! We will get back to you.');
-    form.reset();}
 });
 
 const setError = (element, message) => { const inputControl = element.parentElement; 
@@ -69,25 +64,25 @@ const email2 = document.getElementById('email2');
 
 form2.addEventListener('submit', e => { e.preventDefault(); validateEmail(); }); 
 
-const setError2 = (element, message) => { const inputControl = element.parentElement; 
+const setError2 = (element, message) => { const inputControl2 = element.parentElement; 
 
-const errorDisplay = inputControl.querySelector('.error'); 
+const errorDisplay2 = inputControl.querySelector('.error'); 
 
-errorDisplay.innerText = message; 
+errorDisplay2.innerText = message; 
 
-inputControl.classList.add('error'); 
+inputControl2.classList.add('error'); 
 
-inputControl.classList.remove('success') } 
+inputControl2.classList.remove('success') } 
 
-const setSuccess2 = element => { const inputControl = element.parentElement; 
+const setSuccess2 = element => { const inputControl2 = element.parentElement; 
 
-const errorDisplay = inputControl.querySelector('.error'); 
+const errorDisplay2 = inputControl2.querySelector('.error'); 
 
-errorDisplay.innerText = ''; 
+errorDisplay2.innerText = ''; 
 
-inputControl.classList.add('success'); 
+inputControl2.classList.add('success'); 
 
-inputControl.classList.remove('error'); }; 
+inputControl2.classList.remove('error'); }; 
 const isValidEmail2 = email => { const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; return re.test(String(email).toLowerCase()); }
 
 const validateEmail2 = () => {
@@ -95,9 +90,9 @@ const validateEmail2 = () => {
 const email2Value = email2.value.trim(); 
 
  if(email2Value === '') { 
-setError(email2, 'Email is required'); } 
-else if (!isValidEmail(email2Value)) { setError(email2, 'Provide a valid email address'); } 
-else { setSuccess(email2); } 
+setError2(email2, 'Email is required'); } 
+else if (!isValidEmail(email2Value)) { setError2(email2, 'Provide a valid email address'); } 
+else { setSuccess2(email2); } 
 };
 
 
