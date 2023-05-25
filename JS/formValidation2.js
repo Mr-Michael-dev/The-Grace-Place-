@@ -8,9 +8,11 @@ const question = document.getElementById('question');
 
 
 form.addEventListener('submit', e => { e.preventDefault(); 
+if (validateInputs()) {
+    alert("Submitted successfully! We will get back to you");
 
-validateInputs(); 
-}); 
+this.reset();}
+});
 
 const setError = (element, message) => { const inputControl = element.parentElement; 
 
@@ -67,8 +69,4 @@ menu.onclick = () => {
   navbar.classList.toggle('open');
 }
 
-form.addEventListener('submit', e => { e.preventDefault();
 
-alert("Submitted successfully! We will get back to you");
-
-this.reset();});
