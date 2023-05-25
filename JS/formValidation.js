@@ -9,7 +9,8 @@ const question = document.getElementById('question');
 
 form.addEventListener('submit', e => {
 e.preventDefault(); 
-validateInputs()
+validateInputs();
+
 
 if (validateIputs()){
    alert('Submitted successfully! We will get back to you.');
