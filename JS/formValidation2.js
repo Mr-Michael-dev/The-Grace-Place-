@@ -7,11 +7,9 @@ const email = document.getElementById('email');
 const question = document.getElementById('question'); 
 
 
-form.addEventListener('submit', e => { e.preventDefault(); 
-if (validateInputs()) {
-    alert("Submitted successfully! We will get back to you");
-
-form.reset();}
+form.addEventListener('submit', e => {
+e.preventDefault(); 
+validateInputs()
 });
 
 const setError = (element, message) => { const inputControl = element.parentElement; 
@@ -54,11 +52,15 @@ else { setSuccess(email); }
 
 if(questionValue === '') { 
 setError(question, 'Please enter your question'); } 
-else { setSuccess(question); } }; 
+else { setSuccess(question); } 
 
+if (nameValue !== '' && emailValue !== ''
+&& ==isValidEmail(emailvalue) && questionValue !== '') {
+    alert('Submitted successfully! We will get back to you.');
+    form.reset();
+  }
+}; 
 
-form.onsubmit = () => {
-alert{"Submitted successfully. We will reach out to you."};
 
 // JavaScript code to toggle the visibility of the navigation links
 let menu = document.querySelector('#menu-icon');
