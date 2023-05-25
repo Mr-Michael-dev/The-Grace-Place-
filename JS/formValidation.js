@@ -11,7 +11,7 @@ form.addEventListener('submit', e => {
 e.preventDefault(); 
 validateInputs()
 
-if (validateIputs() === success){
+if (validateIputs()){
    alert('Submitted successfully! We will get back to you.');
     form.reset();}
 });
