@@ -7,7 +7,11 @@ const email = document.getElementById('email');
 const question = document.getElementById('question'); 
 
 
-form.addEventListener('submit', e => { e.preventDefault(); validateInputs(); }); 
+form.addEventListener('submit', e => { e.preventDefault(); validateInputs(); 
+
+alert("Submitted successfully! We will get back to you");
+
+this.reset();}); 
 
 const setError = (element, message) => { const inputControl = element.parentElement; 
 
@@ -87,10 +91,6 @@ setError(email2, 'Email is required'); }
 else if (!isValidEmail(email2Value)) { setError(email2, 'Provide a valid email address'); } 
 else { setSuccess(email2); } 
 };
-
-
-form.onsubmit = () => {
-alert{"Submitted successfully. We will reach out to you."};
 
 
 // JavaScript code to toggle the visibility of the navigation links
