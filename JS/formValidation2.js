@@ -52,6 +52,8 @@ setError(question, 'Please enter your question'); }
 else { setSuccess(question); } }; 
 
 
+form.onsubmit = () => {
+alert{"Submitted successfully. We will reach out to you."};
 
 // JavaScript code to toggle the visibility of the navigation links
 let menu = document.querySelector('#menu-icon');
