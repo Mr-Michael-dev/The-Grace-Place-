@@ -10,9 +10,6 @@ const question = document.getElementById('question');
 form.addEventListener('submit', e => {
 e.preventDefault(); 
 validateInputs()
-if (validateIputs() === success){
-   alert('Submitted successfully! We will get back to you.');
-    form.reset();}
 });
 
 const setError = (element, message) => { const inputControl = element.parentElement; 
