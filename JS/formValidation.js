@@ -7,11 +7,9 @@ const email = document.getElementById('email');
 const question = document.getElementById('question'); 
 
 
-form.addEventListener('submit', e => { e.preventDefault(); 
-if (validateInputs()) {
-    alert("Submitted successfully! We will get back to you");
-
-form.reset();}
+form.addEventListener('submit', e => {
+e.preventDefault(); 
+validateInputs()
 });
 
 const setError = (element, message) => { const inputControl = element.parentElement; 
@@ -54,7 +52,19 @@ else { setSuccess(email); }
 
 if(questionValue === '') { 
 setError(question, 'Please enter your question'); } 
-else { setSuccess(question); } }; 
+else { setSuccess(question); } 
+
+
+if (nameValue !== '' && emailValue !== ''
+&& ==isValidEmail(emailvalue) && questionValue !== '') {
+    alert('Submitted successfully! We will get back to you.');
+    form.reset();
+  }
+
+}; 
+
+
+
 
 const form2 = document.getElementById('form2'); 
 
@@ -91,6 +101,11 @@ const email2Value = email2.value.trim();
 setError(email2, 'Email is required'); } 
 else if (!isValidEmail(email2Value)) { setError(email2, 'Provide a valid email address'); } 
 else { setSuccess(email2); } 
+if (emailValue !== ''
+&& ==isValidEmail(emailvalue)) {
+    alert('Submitted successfully! We will get back to you.');
+    form.reset();
+  }
 };
 
 
