@@ -7,7 +7,14 @@ const email = document.getElementById('email');
 const question = document.getElementById('question'); 
 
 
-form.addEventListener('submit', e => { e.preventDefault(); validateInputs(); }); 
+form.addEventListener('submit', e => { e.preventDefault(); 
+
+validateInputs(); 
+
+alert("Submitted successfully! We will get back to you");
+
+this.reset();
+}); 
 
 const setError = (element, message) => { const inputControl = element.parentElement; 
 
