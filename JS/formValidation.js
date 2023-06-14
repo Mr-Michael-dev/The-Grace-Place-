@@ -62,7 +62,7 @@ const form2 = document.getElementById('form2');
 
 const email2 = document.getElementById('email2'); 
 
-form2.addEventListener('submit', e => { e.preventDefault(); validateEmail(); }); 
+form2.addEventListener('submit', e => { e.preventDefault(); validateEmail2(); }); 
 
 const setError2 = (element, message) => { const inputControl2 = element.parentElement; 
 
